@@ -1,12 +1,12 @@
-# 🔐 Chrome & Brave Password Recovery Tool 🔐
+# 🔐 Chrome, Edge, Opera and Brave Password Recovery Tool 🔐
 
 ## 📱 Overview
 
-This tool helps you recover saved passwords from Chrome and Brave browsers when you've forgotten them. Perfect for IT professionals who need to retrieve credentials for work purposes or individuals who need to recover their own forgotten passwords.
+This tool helps you recover saved passwords from Chrome, Edge, Opera and Brav browsers when you've forgotten them. Perfect for IT professionals who need to retrieve credentials for work purposes or individuals who need to recover their own forgotten passwords.
 
 ## ✨ Features
 
-- 🔍 Recovers passwords from both Chrome and Brave browsers
+- 🔍 Recovers passwords from Chrome, Edge, Opera and Brave browsers
 - 👤 Works with multiple browser profiles
 - 🔄 Automatically generates a Python script to decrypt the passwords
 - 📊 Provides a neat summary of recovered credentials
@@ -56,13 +56,13 @@ if __name__ == '__main__':
 ## 📋 Requirements
 
 - Windows operating system
-- Chrome and/or Brave browser installed
+- Chrome, Edge, Opera or Bravr installed
 - PowerShell
 - Administrator privileges (for best results)
 
 ## 🔧 How It Works
 
-1. The tool stops any running Chrome or Brave processes
+1. The tool stops any running Chrome, Edge, Opera and Brave processes
 2. Extracts encrypted passwords from the browsers
 3. Prepares a Python decryption script
 4. Sends the script to your specified webhook
@@ -97,7 +97,7 @@ We decrypt passwords locally for several important reasons:
 For automated deployment using a USB Rubber Ducky:
 
 ```
-REM Chrome & Brave Password Recovery Tool
+REM Chrome, Edge, Opera and Brave Password Recovery Tool
 DELAY 1000
 GUI r
 DELAY 500
