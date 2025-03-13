@@ -2,7 +2,7 @@
 
 ## 📱 Overview
 
-This tool helps you recover saved passwords from Chrome, Edge, Opera and Brav browsers when you've forgotten them. Perfect for IT professionals who need to retrieve credentials for work purposes or individuals who need to recover their own forgotten passwords.
+This tool helps you recover saved passwords from Chrome, Edge, Opera and Brave browsers when you've forgotten them. Perfect for IT professionals who need to retrieve credentials for work purposes or individuals who need to recover their own forgotten passwords.
 
 ## ✨ Features
 
